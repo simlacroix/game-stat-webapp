@@ -1,0 +1,42 @@
+.runeterra-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    .runeterra-grid {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 0;
+    }
+
+    .runeterra-player {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .runeterra-history {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+}
+
+@media (min-width: 1700px) {
+    .runeterra-grid {
+        display: grid;
+        grid-template-columns:0.1fr 0.50fr 0.9fr 0.1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 0px;
+    }
+
+    .runeterra-player {
+        grid-area: 1 / 2 / 2 / 2;
+    }
+
+    .runeterra-history {
+        grid-area: 1 / 3 / 2 / 3;
+    }
+}
+

@@ -1,0 +1,53 @@
+.Menu-image {
+    padding: 5px;
+    cursor: pointer;
+}
+
+@keyframes rotate-chevron {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 180deg;
+    }
+}
+
+.User-menu-item {
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    width: 100%;
+    height: 2.25rem;
+    padding: 0 0rem 0 2.25rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.User-menu-item:hover {
+    background-color: #CBB26A;
+}
+
+.rotate-user-menu {
+    transition: transform 0.5s;
+    transform: rotateZ(0deg);
+}
+
+.rotate-back-user-menu {
+    transition: transform 0.5s;
+    transform: rotateZ(-180deg);
+}
+
+.slide-down {
+    visibility: visible;
+    transition: transform 500ms, visibility 200ms;
+    transform: translateY(0);
+}
+
+.slide-up {
+    visibility: hidden;
+    transition: transform 300ms, visibility 200ms;
+    transform: translateY(-15%);
+}

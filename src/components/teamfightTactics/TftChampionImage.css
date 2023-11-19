@@ -1,0 +1,19 @@
+.image-tier-1 {
+    filter: invert(42%) sepia(18%) saturate(721%) hue-rotate(168deg) brightness(105%) contrast(86%);
+}
+
+.image-tier-2 {
+    filter: invert(39%) sepia(29%) saturate(1025%) hue-rotate(79deg) brightness(94%) contrast(84%);
+}
+
+.image-tier-3 {
+    filter: invert(59%) sepia(19%) saturate(978%) hue-rotate(155deg) brightness(94%) contrast(88%);
+}
+
+.image-tier-4 {
+    filter: invert(27%) sepia(49%) saturate(2985%) hue-rotate(278deg) brightness(92%) contrast(97%);
+}
+
+.image-tier-5 {
+    filter: invert(77%) sepia(94%) saturate(4001%) hue-rotate(332deg) brightness(99%) contrast(83%);
+}

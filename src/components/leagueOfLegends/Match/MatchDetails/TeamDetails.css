@@ -1,0 +1,12 @@
+.team-details-grid {
+    display: grid;
+    grid-template-columns: 11rem 98px repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 4px;
+    align-items: center;
+}
+
+table, tr, th, td {
+    border: none;
+}

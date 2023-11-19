@@ -1,0 +1,49 @@
+.tft-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    .tft-grid {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 0;
+    }
+
+    .tft-player {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .tft-history {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+}
+
+@media (min-width: 1700px) {
+    .tft-grid {
+        display: grid;
+        grid-template-columns: 0.5fr 0.90fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 0px;
+    }
+
+    .tft-player {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .tft-history {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .tft-match-detail {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+}
+
+.red-image {
+    filter: invert(15%) sepia(97%) saturate(6029%) hue-rotate(358deg) brightness(91%) contrast(79%);
+}
